@@ -1,0 +1,53 @@
+:root{
+    --text: #000d1a;
+    --background: #f5faff;
+    --primary: #0774ff;
+    --secondary: #ff9c6e;
+    --accent: #e5ff35;
+    --hover-bg: #ff9c6e7c;
+    --header-height: 60px;
+}
+
+.main__h1{
+    margin-top: 50px;
+}
+.main__cards{
+    margin-top: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.main__cards__projets{
+    margin: 15px;
+    padding: 10px;
+}
+
+.main__cards__img{
+    margin-top: 10px;
+    max-width: 250px;
+    height: auto;
+    border: 1px dashed var(--hover-bg);
+    border-radius: 10px;  
+}
+/* Tablette (portrait et paysage) : à partir de 768px */
+@media (min-width: 768px){
+    .main__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop : large ET avec une souris */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine){
+    .main__cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .main__cards__projets {
+        filter: saturate(30%);
+        transition: filter .3s ease-in-out, transform .3s ease-in-out;
+    }
+
+    .main__cards__projets:hover {
+        transform: scale(1.03);
+        filter: saturate(100%);
+    }
+}

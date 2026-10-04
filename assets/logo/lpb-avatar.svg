@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Le_Pigeon_Baladeur">
+  <title>Le_Pigeon_Baladeur</title>
+  <circle cx="160" cy="160" r="150" fill="#16191D"/>
+  <g transform="translate(140.9,88.75) scale(0.75)">
+    <g id="glyphe" fill-rule="evenodd" fill="#F0EFEA">
+      <path d="M0,0 H28 V190 H0 Z"/>
+      <path d="M76,0 A63,63 0 1 1 76,126 A63,63 0 1 1 76,0 Z
+               M80,29 A34,34 0 1 0 80,97 A34,34 0 1 0 80,29 Z"/>
+      <path d="M-88,134 H-12 V162 H-88 Z"/>
+    </g>
+  </g>
+</svg>

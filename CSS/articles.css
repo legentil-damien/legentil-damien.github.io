@@ -1,0 +1,56 @@
+main{
+    text-align: center;
+}
+
+.main__h1{
+    margin-top: 50px;
+}
+.main__article{
+    margin-top: 100px;
+}
+
+hr{
+    color: var(--secondary);
+    margin: 100px 0;
+}
+.article__h2{
+    margin: 30px 0;
+}
+.article__h3{
+    margin: 25px 0;
+}
+p{
+    margin: 10px 0;
+}
+
+.article__img{
+    margin-top: 100px;
+    max-width: 250px;
+    height: auto;
+    border: 1px dashed var(--hover-bg);
+    border-radius: 10px; 
+}
+
+ul{
+    list-style: none;
+}
+dd{
+    color: var(--secondary);
+    font-size: small;
+}
+.main ol{
+    list-style-position: inside;
+}
+/* Tablette (portrait et paysage) : à partir de 768px */
+@media (min-width: 768px){
+    .article__img{
+        max-width: 500px;
+    }
+
+}
+
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine){
+  .article__img{
+        max-width: 700px;
+    }
+}

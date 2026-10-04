@@ -1,0 +1,38 @@
+.projet__img{
+    margin-top: 100px;
+    max-width: 250px;
+    height: auto;
+    border: 1px dashed var(--hover-bg);
+    border-radius: 10px; 
+}
+
+h1, h2, .main__ul{
+    margin: 25px 0;
+}
+p{
+    margin: 5px;
+    text-align: center;
+    
+}
+.main__div__img{
+    display: grid;
+    
+}
+/* Tablette (portrait et paysage) : à partir de 768px */
+@media (min-width: 768px){
+    .projet__img{
+        max-width: 500px;
+    }
+
+}
+
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine){
+  .projet__img{
+        max-width: 700px;
+    }
+    .main__div__img{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    
+    }
+}
