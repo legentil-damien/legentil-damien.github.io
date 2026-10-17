@@ -1,0 +1,37 @@
+.h2__minuteur{
+    padding: 150px 0 10px 0;
+    font-size: 50px;
+}
+.p__session{
+    padding: 50px 100px;
+}
+.icone__pause{
+    display: none;
+}
+
+.btn__start.en-cours .icone__play {
+    display: none;
+}
+.btn__start.en-cours .icone__pause{
+    display: inline;
+}
+.btn__start, .btn__pause, .btn__reset, .btn__passer{
+    font-family: Mali, sans-serif;
+    border: 1px solid var(--secondary);
+    box-shadow: 1px 1px var(--text);
+    border-radius: 20px;
+    background-color: var(--hover-bg);
+    margin: 15px;
+    padding: 25px;
+}
+
+@media (hover: hover){
+    .btn__start, .btn__pause, .btn__reset, .btn__passer{
+        cursor: pointer;
+    }
+
+    .btn__start:hover, .btn__pause:hover, .btn__reset:hover, .btn__passer:hover{
+        transform: scale(1.05);
+    }
+
+}
