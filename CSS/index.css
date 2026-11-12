@@ -47,7 +47,18 @@
 .coordo__reseaux a{
     overflow-wrap: anywhere;
 }
-
+/* Compétences */
+.main__competences{
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.ul__competences{
+    margin: 0px 25px;
+}
+.li__competences{
+    padding: 10px;
+}
 /* CV */
 .main__cv{
     width: 100%;
@@ -139,5 +150,8 @@ tr{
     }
     .main__cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .main__competences{
+        margin: 50px;
     }
 }
