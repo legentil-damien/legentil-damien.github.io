@@ -14,6 +14,14 @@
     --hover-bg: #ff9c6e7c;
     --header-height: 60px;
 }
+[data-theme="dark"] {
+    --text: #f0f7ff;
+    --background: #000d1a;
+    --primary: #3b91ff;
+    --secondary: #ff8f5c;
+    --accent: #e5ff35;
+    --hover-bg: #ff9c6e33;
+}
 
 *{
     margin: 0;
@@ -130,6 +138,11 @@ span{
 .navbar__link:active{
     background-color: var(--hover-bg);
 }
+#toggleBtn{
+    border: none;
+    cursor: pointer;
+    background-color: #000d1a00;
+}
 
 /* Layout */
 .layout{
@@ -178,6 +191,9 @@ main{
         background-color: var(--hover-bg);
     }
     .navbar__link:hover{
+        background-color: var(--hover-bg);
+    }
+    #toggleBtn:hover{
         background-color: var(--hover-bg);
     }
 }
